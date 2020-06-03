@@ -1,0 +1,114 @@
+body{
+    height: 67vw;
+    background-image:linear-gradient(to bottom left,rgb(38, 70, 83),rgb(38, 138, 126));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto;
+    overflow-y:scroll;
+}
+*{
+    box-sizing: border-box;
+}
+#form{  
+    position: relative;
+    top: 7vw;
+    left: 29vw;
+    right: 31vw;
+    bottom: 20vw;
+    height: auto;
+    width: 40vw;
+    padding: .5vw 5vw 8vw 3vw;
+    border-radius: 3vw 3vw 3vw 0%;
+    background-image: linear-gradient( to bottom left , rgb(38, 138, 126), rgb(42, 157,143,.1));
+    box-shadow: 1vw 2vw 1.5vw black;
+}
+#form h1{
+    color: rgb(244, 162, 97);
+    font-size: 4vw;
+    font-weight: bold;
+    padding-top:0vw;
+    text-shadow: .2vw .3vw .5vw black;
+}
+input, select{
+    margin-left: 4vw;
+    background-color: rgb(231, 228, 228);
+}
+select{
+    margin-left:1vw;
+    border-radius: 1vw;
+    height: 2vw;
+    width: 5vw;
+    padding: .1vw;
+}
+option{
+    font-size: 1vw;
+    height: 1vw;
+    width: 1vw;
+}
+select:focus{
+    border: none;
+    outline: none;
+}
+option:hover{
+    border: none;
+    outline:none
+}
+#Fname, #Lname, #mail, .password{
+    height: 3vw;
+    width: 28vw;
+    padding-left:1.2vw ;
+    border: none;
+    border-radius:7px;
+    background-color: rgb(231, 228, 228);
+    font-weight: bold;
+    font-size: 1.1vw;
+    margin-bottom: 1vw;
+}
+br{
+    width: 1vw;
+}
+label{
+    position: relative;
+    left: 1vw;
+    color:rgb(244, 162, 97);
+    font-size: 2vw;
+    font-weight: bolder;
+    text-shadow: .3vw .1vw .2vw black;
+    outline: none;
+}
+#Fname:focus, #Lname:focus, #mail:focus, .password:focus{
+    border-bottom:solid .5vw rgb(231, 111, 81);
+    outline: none;
+}
+#submit{
+    border: none;
+    border-radius: 2vw;
+    height: 4vw;
+    width: 7vw;
+    margin-top: 2vw;
+    font-weight: bold;
+    position: absolute;
+    right: 16.5vw;
+    font-size: 1vw;
+    cursor:pointer;
+    padding: 1vw 1vw;
+}
+#submit:hover{
+    background-color: #E9C46A;
+    font-size:1vw;
+
+}
+#submit:active{
+    background-color:rgb(231, 111, 81) ;
+    
+}
+#submit:focus{
+    border: none;
+    outline: none;
+}
+input[type=radio]{
+    width: 1vw;
+    height: 1vw;
+    cursor: pointer;
+    margin-top: 3vw;
+}
