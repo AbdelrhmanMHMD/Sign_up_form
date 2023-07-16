@@ -1,92 +1,167 @@
 <!DOCTYPE HTML>
 <HTML lang="en">
-    <head> 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width= device-width ,initial-scale= 1.0">
-        <link rel="stylesheet" href="style.css" type="text/css">
-        <script src="java.js"></script>
-    </head>
-    <body>
-        
-            <div id="form">
-       <form name="myform" onsubmit="return validateform()">
-           <center>
-           <div>
-              <h1><u>Sign up</h1></u>
-            </div></center>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width ,initial-scale= 1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="java.js"></script>
+</head>
+
+<body>
+
+    <div id="form">
+        <form name="myform" onsubmit="return validateform()">
+            <center>
+                <div>
+                    <h1><u>Sign up</h1></u>
+                </div>
+            </center>
             <hr size="2" color="#E9C46A" NOSHADE>
             <label for="Fname">First Name:</label>
-            
-            <input type="text" id="Fname" placeholder="First Name...." name="Fname" pattern="[A-Za-z]" maxlength="32" minlength="2" autocomplete="off" required autofocus>
-            
-            <label for="Lname">Last Name:</label>
-            
-            <input type="text" id="Lname" placeholder="Last Name...." pattern="[A-Za-z]" maxlength="32" minlength="2" autocomplete="off" required>
 
-           
+            <input type="text" id="Fname" placeholder="First Name...." name="Fname" pattern="[A-Za-z]" maxlength="32"
+                minlength="2" autocomplete="off" required autofocus>
+
+            <label for="Lname">Last Name:</label>
+
+            <input type="text" id="Lname" placeholder="Last Name...." pattern="[A-Za-z]" maxlength="32" minlength="2"
+                autocomplete="off" required>
+
+
             <label for="e-mail">E-Mail:</label>
 
-            
+
             <input type="email" id="mail" placeholder="Example@mail.com" required>
 
-            
+
 
             <label for="Password">New Password:</label>
-            
-            <input type="password" class="password" placeholder="Enter a password...." required> 
-           
+
+            <input type="password" class="password" placeholder="Enter a password...." required>
+
             <label for="CPasssword">Confirm Password:</label>
-            
+
             <input type="password" class="password" placeholder="Confirm password...." required>
 
 
-            
 
             <label for="age">Birthday:</label>
             <select id="age">
-                <option>1</option><option>2</option><option>3</option><option>4</option>
-                <option>5</option><option>6</option><option>7</option><option>8</option>
-                <option>9</option><option>10</option><option>11</option><option>12</option>
-                <option>13</option><option>14</option><option>15</option><option>16</option>
-                <option>17</option><option>18</option><option>19</option><option>20</option>
-                <option>21</option><option>22</option><option>23</option><option>24</option>
-                <option>25</option><option>26</option><option>27</option><option>28</option>
-                <option>29</option><option>30</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
             </select>
             <select id="age">
-                <option>يناير</option><option>فبراير</option><option>مارس</option><option>ابريل</option><option>مايو</option>
-                <option>يونيو</option><option>يوليو</option><option>اغسطس</option><option>سبتمبر</option><option>أكتوبر</option>
-                <option>نوفمبر</option><option>ديسمبر</option>
+                <option>يناير</option>
+                <option>فبراير</option>
+                <option>مارس</option>
+                <option>ابريل</option>
+                <option>مايو</option>
+                <option>يونيو</option>
+                <option>يوليو</option>
+                <option>اغسطس</option>
+                <option>سبتمبر</option>
+                <option>أكتوبر</option>
+                <option>نوفمبر</option>
+                <option>ديسمبر</option>
             </select>
-            <select id="age"> 
-                <option>2011</option><option>2010</option><option>2009</option><option>2008</option>
-                <option>2007</option><option>2006</option><option>2005</option><option>2004</option>
-     <option>2003</option><option>2002</option><option>2001</option><option selected>2000</option>
-                <option>1999</option><option>1998</option><option>1997</option><option>1996</option>
-                <option>1995</option><option>1994</option><option>1993</option><option>1992</option>
-                <option>1991</option><option>1990</option><option>1989</option><option>1988</option>
-                <option>1988</option><option>1987</option><option>1986</option><option>1985</option>
-                <option>1984</option><option>1983</option><option>1982</option><option>1981</option>
-                <option>1980</option><option>1979</option><option>1978</option><option>1977</option>
-                <option>1976</option><option>1975</option><option>1974</option><option>1973</option>
-                <option>1972</option><option>1971</option><option>1970</option><option>1969</option>
-                <option>1968</option><option>1967</option><option>1966</option><option>1965</option>
-                <option>1964</option><option>1963</option><option>1962</option><option>1961</option>
+            <select id="age">
+                <option>2011</option>
+                <option>2010</option>
+                <option>2009</option>
+                <option>2008</option>
+                <option>2007</option>
+                <option>2006</option>
+                <option>2005</option>
+                <option>2004</option>
+                <option>2003</option>
+                <option>2002</option>
+                <option>2001</option>
+                <option selected>2000</option>
+                <option>1999</option>
+                <option>1998</option>
+                <option>1997</option>
+                <option>1996</option>
+                <option>1995</option>
+                <option>1994</option>
+                <option>1993</option>
+                <option>1992</option>
+                <option>1991</option>
+                <option>1990</option>
+                <option>1989</option>
+                <option>1988</option>
+                <option>1988</option>
+                <option>1987</option>
+                <option>1986</option>
+                <option>1985</option>
+                <option>1984</option>
+                <option>1983</option>
+                <option>1982</option>
+                <option>1981</option>
+                <option>1980</option>
+                <option>1979</option>
+                <option>1978</option>
+                <option>1977</option>
+                <option>1976</option>
+                <option>1975</option>
+                <option>1974</option>
+                <option>1973</option>
+                <option>1972</option>
+                <option>1971</option>
+                <option>1970</option>
+                <option>1969</option>
+                <option>1968</option>
+                <option>1967</option>
+                <option>1966</option>
+                <option>1965</option>
+                <option>1964</option>
+                <option>1963</option>
+                <option>1962</option>
+                <option>1961</option>
                 <option>1960</option>
             </select>
 
-            
+
             <input type="radio" id="Male" name="Gender" checked required>
             <label for="Male">Male</label>
 
             <input type="radio" id="Female" name="Gender" required>
             <label for="Female">Female</label>
             <br>
-            
+
             <input type="submit" value="Sign up" id="submit">
-            
+
         </form>
-        </div>
-    
-    </body>
+    </div>
+
+</body>
+
 </HTML>
